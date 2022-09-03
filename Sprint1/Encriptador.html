@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encriptador</title>
+	<link rel="stylesheet" href="reset.css">
+
+	<!--este es para un font especial-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+	<script src="Encriptador.js"></script>
+	<link rel="stylesheet" href="Encriptador.css">
+
+</head>
+<body>
+
+<main>
+	<h1 id="Titulo">ENCRIPTADOR</h1>
+		<ul class="contenedor">
+			<li class="contenedor-tarjetas" id="tarjeta1">
+
+				<textarea id="textoDigitado" class="tarjetas-text" placeholder="Ingresa tu texto aqui"></textarea>
+				<div class="tarjetas-boton">
+					<BUTTON onclick="EncriptarMensaje()">Encriptar</BUTTON>
+					<BUTTON onclick="DesEncriptarMensaje()" >Desencriptar</BUTTON>
+				</div>
+			</li>
+			<li class="contenedor-tarjetas" id="tarjeta2">
+				
+					<!--<div >
+						<img src="imagenes/searching.png">
+						<p>Ningún mensaje fue encontrado</p>
+						<p>Ingresa el texto que desees encriptar o desencriptar.</p>
+					</div>-->
+				<textarea id="resultado" class="tarjetas-text" readonly="readonly"></textarea>
+				
+				<div class="tarjetas-boton">
+					<BUTTON onclick="CopiarPortapapeles()">Copiar</BUTTON>
+					<BUTTON onclick="limpiar()">Limpiar</BUTTON>
+				</div>
+			</li>
+		</ul>
+</main>
+</body>
+</html>

@@ -1,0 +1,81 @@
+*{
+  font-family: 'Fredoka One', cursive;
+}
+body{
+  background-color: rgb(217, 217, 233);
+}
+#Titulo{
+  padding: 20px 0;
+  font-size: 35px;
+  color: #154c79;
+  padding: 5px;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 0;
+    min-height: 500px;
+    box-sizing: border-box;
+  }
+  
+ .contenedor-tarjetas {
+    padding: 20px 20px;
+    box-sizing: border-box;
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    border-radius: 10px;
+  }
+
+.tarjetas-text{
+  width: 100%;
+  text-align: justify;
+  box-sizing: border-box;
+  min-height: 500px;
+  border: transparent;
+  background-color: transparent;
+  resize: none;
+  font-size: 25px;
+}
+
+.tarjetas-boton{
+  text-align: center;
+}
+
+#tarjeta2{
+  background-color: white;
+  }
+
+#resultado{
+  background-image: url(imagenes/buscar.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 50%;
+}
+
+
+button{
+  background-color: transparent;
+  color: #2982ca;
+  border: 2px solid #2982ca;
+  width: 30%;
+  padding: 1px 0;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: 1s all;
+  margin-right: 23px;
+  cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.2);
+}
+
+/*main ideas okay esto fue mas dificil de lo que pense por que estuve batallando un monton aun no se la diferencia entre
+inline bloc y inline grid pero pude dejarlo pegadito a las esquinas el div mayor que es contenedor
+y las tarjetas solo con una separacion pequeña a hora quiero ver lo que puedo llegar a hacer tambien descubri
+que margin es para externo padding interno box-sizing es para que el padding se tome encuenta con el tamano total
+min-height significa que puede aumentar pero menos que eso no
+a los textarea le tuve que aplicar que su width fuera del 100% que se ensanche si se ensancha el otro y que se achique si lo hace el contenedor
+tambien vertical align top es importante sino queda abajo la tarjeta mas pequena*/
